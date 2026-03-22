@@ -22,7 +22,8 @@ ContextTypes, ConversationHandler, filters
 
 # ─── Настройки ────────────────────────────────────────────────────────────────
 
-BOT_TOKEN = “ВСТАВЬ_СЮДА_ТОКЕН_БОТА”  # Получить у @BotFather
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+  # Получить у @BotFather
 TIMEZONE = “Europe/Moscow”  # Твоя временная зона
 DATA_FILE = “reminders.json”  # Файл для хранения напоминаний
 
